@@ -126,7 +126,7 @@
                     "skoruba_identity_admin_api"
                 ],
                 "AllowedCorsOrigins": [
-                    "https://admin-api."
+                    "https://admin-api-skoruba"
                 ]
             }
         ]

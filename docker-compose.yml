@@ -43,7 +43,6 @@ services:
       - 'IdentityServerData__Clients__0__PostLogoutRedirectUris__0=https://admin-skoruba/signout-callback-oidc'
       - 'IdentityServerData__Clients__0__AllowedCorsOrigins__0=https://admin-skoruba'
       - 'IdentityServerData__Clients__1__RedirectUris__0=https://admin-api-skoruba/swagger/oauth2-redirect.html'
-      # - 'Serilog__WriteTo__1__Args__connectionString=Server=db;Database=IdentityServer4Admin;User Id=sa;Password=${DB_PASSWORD:-Password_123};MultipleActiveResultSets=true'
       - 'Serilog__WriteTo__1__Args__connectionString=Server=postgres;Port=5432;Database=IdentityServer4Admin;Username=admin;Password=Medtr@26'
       # - DockerConfiguration__UpdateCaCertificate=true
       - ASPNETCORE_ENVIRONMENT=Development
@@ -72,7 +71,7 @@ services:
       - VIRTUAL_HOST=admin-api-skoruba
       # - VIRTUAL_PORT=80
       - AdminApiConfiguration__RequireHttpsMetadata=false
-      - 'AdminApiConfiguration__ApiBaseUrl=https://admin-api.'
+      - 'AdminApiConfiguration__ApiBaseUrl=https://admin-api-skoruba'
       - 'AdminApiConfiguration__IdentityServerBaseUrl=https://sts-skoruba'
       - 'ConnectionStrings__ConfigurationDbConnection=Server=postgres;port=5432;Database=IdentityServer4Admin;Username=admin;Password=Medtr@26'
       - 'ConnectionStrings__PersistedGrantDbConnection=Server=postgres;port=5432;Database=IdentityServer4Admin;Username=admin;Password=Medtr@26'
