@@ -18,9 +18,9 @@
                 }
             },
             {
-                "Name": "MSSqlServer",
+                "Name": "PostgreSql",
                 "Args": {
-                    "connectionString": "Server=(localdb)\\mssqllocaldb;Database=IdentityServer4Admin;Trusted_Connection=True;MultipleActiveResultSets=true",
+                    "connectionString": "Server=postgres;port=5432;Database=IdentityServer4Admin;Username=admin;Password=Medtr@26;MultipleActiveResultSets=true'",
                     "tableName": "Log",
                     "columnOptionsSection": {
                         "addStandardColumns": [ "LogEvent" ],
